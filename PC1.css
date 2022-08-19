@@ -1,0 +1,69 @@
+*{box-sizing: border-box;}
+.nb{background-color: aquamarine; }
+.nb1{text-align: left; }
+h1{font-size: 3rem; color: #004116;text-align: center;text-shadow: #69f569 5px 6px 10px; }
+.imgl{height: 200px; width: 200px; border: 5px solid #e5ee65; border-radius: 1000px; margin: 0; }
+a{color: darkblue;}
+        /* For desktop: */
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-3-5{width: 28%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+        .nb3{display: flex;
+            flex-direction: row;
+           text-transform:uppercase;}
+           .nb3 a{background-color:transparent; margin-top: 10px; padding: 10px; border: 3px; color: darkgreen; text-align: right;}
+           .nb3{margin-left: 8%; margin-top: 0;}
+        
+           .nb3 a:hover{ background-color: darkcyan; color: aqua;}
+           .nb2 h1{text-align: right;  margin-left: 5px;}
+           .lgup{ width: 230px; height: 150px;  transition: width 5s, height 5s, transform 5s; }
+           .lgup{  animation-name:animation; animation-duration: 20sec; animation-delay: 2sec; animation-iteration-count: infinite; }
+           .lgup:hover{transform: rotate(360deg); width: 300px ; height: 200px;}
+           .lgdn{ width: 230px; height: 150px; border:3px solid gold; transition:width 5s,height 5s, transform 5s;  }
+           .lgdn:hover{transform: rotate(360deg);width: 300px ; height: 200px;}
+           .ani{ width: 240px; height: 160px; animation-name: anim; animation-duration: 7s; animation-iteration-count: infinite; margin: 0% ; padding: 0; }
+                  
+           @keyframes anim{  
+                0%{ border: solid 8px orange ;}
+           10%{ border: solid 7px #ffc04c;}
+           20%{border: solid 7.5px #fffb00;}
+           30%{ border:solid 7.5px #ff7707; }
+           40%{ border:solid 7.5px #ff4800;}
+           50%{ border:solid 7.5px #ff2600; }
+           60%{border:solid 7.5px #ff4800;}
+           70%{ border:solid 7.5px #ff7707; }
+           80%{ border: solid 7.5px #fffb00;}
+           90%{ border: solid 7.5px #ffc04c; }
+           100%{ border: solid 7.5px orange;  }
+           }
+           .abtm h1{color: lightgreen;}
+           .amtxt h4{ color: #8aedff; text-align: left; font-size: 2rem; margin-top: 0; margin-bottom: 0;}
+           .picdiv img{margin-top: 80px;}
+           .carj{box-sizing: border-box;}
+          
+          
+          
+           #skills li::before{content: '';
+            position: absolute; top:calc(85%);
+             background: #d3ffed; width: 300px; height: 20px; left: 0; border-radius:100px;}
+
+
+           .footer-menu{
+               margin-top: 12px;
+           }
+           
+           .footer-menu a {
+               display: inline;
+               margin: 10px;
+           
+           }

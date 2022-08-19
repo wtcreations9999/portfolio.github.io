@@ -1,0 +1,146 @@
+body{margin: 0;font-family: 'Merriweather Sans', sans-serif;}
+*{box-sizing: border-box; ;}
+.nb{background-color: #0b003d; padding: 1% 2%; text-align: center; margin: 0;}
+h1{font-size: 3rem; color: lightgreen; text-align: center; font-family:'Bebas Neue', cursive ; text-shadow: #69f569 3px 2px 10px;}
+.imgl{height: 200px; width: 200px; border: 5px solid #e5ee65; border-radius: 1000px;}
+a{ color: lightskyblue; text-decoration: none; font-size: 1.5rem; padding: 10px; font-family:'Bebas Neue', cursive Georgia, 'Times New Roman', Times, serif;}
+[class*="col-"]{ float:left; padding: 20px ; margin: 0px;}
+[class*="col-"]{ width: 100%; padding: 20px ;}
+.nb::after{content: ''; display: table; clear: both;}
+.nb3{display: flex;
+     flex-direction: column;
+    text-transform:uppercase;}
+    .nb3 a{background-color: darkblue; margin-top: 10px; padding: 10px; border: 3px #20beda solid;}
+    .nb3 a:hover{ background-color: darkcyan; color: aqua;}
+    .logo{ text-align: right; margin: 8% 3%;}
+    .logodn{ text-align: left; margin: 8% 3%;}
+    p{font-family: 'Merriweather Sans', sans-serif; font-size: 1.5rem; color: #1e0030; text-align: justify;  padding: 5px; }
+.pftxt p{margin: 40px 20%;}
+.pftxt h1{font-family: 'Caveat', cursive; color: #004116; }
+.defin{padding: 20px; text-align: center; position: relative; }
+.lgup{ width: 230px; height: 150px;  transition:transform 5s; }
+.lgup{  animation-name:animation; animation-duration: 20sec; animation-delay: 2sec; animation-iteration-count: infinite; }
+.lgup:hover{transform: rotate(360deg);}
+.lgdn{ width: 230px; height: 150px; border:3px solid gold; transition:transform 5s;  }
+.lgdn:hover{transform: rotate(360deg);}
+.ani{ width: 240px; height: 160px; animation-name: anim; animation-duration: 7s; animation-iteration-count: infinite; margin: 0% ; padding: 0; }
+       
+@keyframes anim{  
+     0%{ border: solid 8px orange ;}
+10%{ border: solid 7px #ffc04c;}
+20%{border: solid 7.5px #fffb00;}
+30%{ border:solid 7.5px #ff7707; }
+40%{ border:solid 7.5px #ff4800;}
+50%{ border:solid 7.5px #ff2600; }
+60%{border:solid 7.5px #ff4800;}
+70%{ border:solid 7.5px #ff7707; }
+80%{ border: solid 7.5px #fffb00;}
+90%{ border: solid 7.5px #ffc04c; }
+100%{ border: solid 7.5px orange;  }
+}
+.defin::after{content: '';
+               display: table; 
+               clear: both; }
+.abtm h1{ margin: 0;}               
+.abtm{background-color: #000063; text-align: center;}
+.hrs{color: #cdf8ff; border: #cdf7ff 6px dotted; width: 200px; text-align: center; margin:  auto; border-bottom: none;}
+.picdiv img{border-radius: 100%; width: 300px; height: 380px; }
+.amtxt p{ color: #8aedff;}
+.amtxt h4{ color: #8aedff; text-align: center; font-size: 2rem; margin-top: 0; margin-bottom: 0;}
+.amtxt a { color: #cdf7ff;}
+.amtxt a:hover{ color: #e5ee65;}
+.DWNLDCV{font-size: 1.2rem; cursor:alias; padding: 5px; background-color:#20beda  ; color: #000063; text-align:center; } 
+.abtm{ margin-bottom: 20px;}
+
+
+
+
+
+.abtm::after{content: '';
+     display: table; 
+     clear: both;
+}
+.carj{box-sizing: border-box;  margin: 0 auto; justify-content: center; align-items: center; text-align: center;}
+h2{font-size: 2.5rem; color: #240141; text-align: center; font-family:'Bebas Neue', cursive ;
+      text-shadow: #35003a 3px 2px 10px; background: #99a6aa; margin-bottom: 0; } 
+
+.card{ background-color: #007e94;  
+      box-sizing: border-box;  margin: 10px; 
+          border-radius: 10px; transition: 1s;}
+.card h3{font-size: 1.5rem; color: #250009; text-align: left; font-family:'Bebas Neue', cursive ; text-shadow: #be0029 3px 2px 10px; }
+.card hr{ color: white ; text-align: center; margin-top: 10px;}
+.card:hover{box-shadow: #0b003d 10px 10px 40px;}
+#skills li{text-align: center; color: #10002e;font-size: 1.2rem; 
+     font-weight: bolder; list-style:none ; position: relative ; padding: 20px; margin-top: 0;  text-transform: uppercase;}
+#skills li::before{content: '';
+     position: absolute; top:calc(85%);
+      background: #d3ffed; width: 350px; height: 20px; left: 0; border-radius:100px;}
+#skills li::after{content: '';
+     position: absolute; top:calc(85%);
+      background: #eeff00; width: 00px; height: 20px; left: 0; border-radius:100px;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-direction: forward;
+                        }
+                         #skills li.html::after{ animation-name: html;}   
+                         #skills li.css::after{ animation-name: css;}   
+                         #skills li.js::after{ animation-name: js;}                   
+                         #skills li.c::after{ animation-name:c;}   
+                         #skills li.php::after{ animation-name: php;}
+                         #skills li.ve::after{ animation-name: ve;}
+                         #skills li.pe::after{ animation-name: pe;}
+      @keyframes html{ to{width: 90%; background:#ff1100;}}
+      @keyframes css{ to{width: 80%; background:#ff4800;}}
+      @keyframes c{ to{width: 60%; background:#ff5100;}}
+      @keyframes java{ to{width: 40%; background:#ff4800;}}
+      @keyframes php{ to{width: 50%; background:#ff7b00;}}
+      @keyframes js{ to{width: 70%; background:#ff7300;}}
+      @keyframes ve { to { width: 92% ; background-color: #c00000; }}
+      @keyframes pe { to { width: 88%; background-color: #ff1e00; }}
+      .carj{margin-top: 10px;}
+     
+      .carj::after{content: '';
+          display: table; 
+          clear: both;}
+ 
+
+          .accm{ background-color: #23c754; border-radius: 40px; margin: 10px 0;}
+          h5{ color: #0b003d; font-size: 2.5rem; font-family:'Bebas Neue' , cursive ; text-align: center; margin: 0 auto; margin-top: 10px;}
+          .ach p{ font-size: 1rem; }
+          .cntme{ text-align: center;}
+          .cntme input, textarea{ width: 100%; font-size: 1rem; padding: 10px; border: none; text-align: center; border-radius: 20px; resize: none;}
+          
+          .cntme input { height: 30px;} 
+          .cntme button{ border: none; background-color: #1e0030; margin: 10px;
+                color: #69f569; font-size: 1rem; height: 30px; width: 120px; cursor: pointer;}
+                .icons{ text-align: center; margin-top: 20px;}
+                .icons .btn{ border: none; border-radius: 40px; cursor: pointer; font-size:2rem; width: 50px;height: 50px; padding: 5px; margin: 10px; background-color: lightcyan;}
+                .btn:hover {background: darkblue;}
+                
+                .footer{
+                    background-color: black;
+                    color: white;
+                    padding: 20px;
+                    text-align: center;
+                    font-size: 0.8rem;
+                
+                }
+                
+                .footer-menu a{
+                    display: block;
+                    margin: 15px 0;
+                    font-size: 1rem;
+                }
+                
+                .footer-menu a:hover{
+                    color: gray;
+                }
+                
+                .footer::after{
+                    display: table;
+                    content: '';
+                    clear: both;
+                }
+                
+                
